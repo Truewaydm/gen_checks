@@ -1,0 +1,194 @@
+[
+  {
+    "model": "checks.merchantpoint",
+    "pk": 1,
+    "fields": {
+      "name": "point 1",
+      "address": "New York, Nine Street, 1",
+      "created_at": "2023-06-18T07:15:06.085Z",
+      "updated_at": "2023-06-18T07:15:06.085Z"
+    }
+  },
+  {
+    "model": "checks.merchantpoint",
+    "pk": 2,
+    "fields": {
+      "name": "point 2",
+      "address": "New York, Nine Street, 2",
+      "created_at": "2023-06-18T07:15:12.628Z",
+      "updated_at": "2023-06-18T07:15:12.628Z"
+    }
+  },
+  {
+    "model": "checks.printer",
+    "pk": 1,
+    "fields": {
+      "name": "printer 1",
+      "api_key": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "check_type": "kitchen",
+      "merchant_point": 1,
+      "created_at": "2023-06-18T07:16:20.539Z",
+      "updated_at": "2023-06-18T07:16:20.539Z"
+    }
+  },
+  {
+    "model": "checks.printer",
+    "pk": 2,
+    "fields": {
+      "name": "printer 2",
+      "api_key": "557c9f41-f384-4af2-8f2a-909758327a04",
+      "check_type": "client",
+      "merchant_point": 1,
+      "created_at": "2023-06-18T07:16:45.074Z",
+      "updated_at": "2023-06-18T07:16:45.074Z"
+    }
+  },
+  {
+    "model": "checks.printer",
+    "pk": 3,
+    "fields": {
+      "name": "printer 3",
+      "api_key": "0acd4d61-df48-494a-97a5-f17ab899c7b3",
+      "check_type": "client",
+      "merchant_point": 1,
+      "created_at": "2023-06-18T07:16:55.074Z",
+      "updated_at": "2023-06-18T07:16:55.074Z"
+    }
+  },
+  {
+    "model": "checks.check",
+    "pk": 1,
+    "fields": {
+      "printer": 1,
+      "check_type": "kitchen",
+      "order": {
+        "merchant_point": 1,
+        "total_price": 174,
+        "items": [
+          {
+            "name": "pizza",
+            "price": 109,
+            "count": 1
+          },
+          {
+            "name": "sauce",
+            "price": 15,
+            "count": 1
+          },
+          {
+            "name": "lemonade",
+            "price": 50,
+            "count": 1
+          }
+        ],
+        "uuid": "d93645e9-d2d8-48fa-8352-d0dc7736c991"
+      },
+      "status": "new",
+      "pdf_file": "",
+      "created_at": "2023-06-18T07:20:59.640Z",
+      "updated_at": "2023-06-18T07:20:59.640Z"
+    }
+  },
+  {
+    "model": "checks.check",
+    "pk": 2,
+    "fields": {
+      "printer": 2,
+      "check_type": "client",
+      "order": {
+        "merchant_point": 1,
+        "total_price": 174,
+        "items": [
+          {
+            "name": "pizza",
+            "price": 109,
+            "count": 1
+          },
+          {
+            "name": "sauce",
+            "price": 15,
+            "count": 1
+          },
+          {
+            "name": "lemonade",
+            "price": 50,
+            "count": 1
+          }
+        ],
+        "uuid": "d93645e9-d2d8-48fa-8352-d0dc7736c991"
+      },
+      "status": "new",
+      "pdf_file": "",
+      "created_at": "2023-06-18T07:20:59.649Z",
+      "updated_at": "2023-06-18T07:20:59.649Z"
+    }
+  },
+  {
+    "model": "checks.check",
+    "pk": 3,
+    "fields": {
+      "printer": 1,
+      "check_type": "kitchen",
+      "order": {
+        "merchant_point": 1,
+        "total_price": 190,
+        "items": [
+          {
+            "name": "pizza",
+            "price": 125,
+            "count": 1
+          },
+          {
+            "name": "sauce",
+            "price": 15,
+            "count": 1
+          },
+          {
+            "name": "lemonade",
+            "price": 50,
+            "count": 1
+          }
+        ],
+        "uuid": "1914e8f3-2c18-4024-8df7-e4749988607b"
+      },
+      "status": "new",
+      "pdf_file": "",
+      "created_at": "2023-06-18T07:21:33.767Z",
+      "updated_at": "2023-06-18T07:21:33.767Z"
+    }
+  },
+  {
+    "model": "checks.check",
+    "pk": 4,
+    "fields": {
+      "printer": 2,
+      "check_type": "client",
+      "order": {
+        "merchant_point": 1,
+        "total_price": 190,
+        "items": [
+          {
+            "name": "pizza",
+            "price": 125,
+            "count": 1
+          },
+          {
+            "name": "sauce",
+            "price": 15,
+            "count": 1
+          },
+          {
+            "name": "lemonade",
+            "price": 50,
+            "count": 1
+          }
+        ],
+        "uuid": "1914e8f3-2c18-4024-8df7-e4749988607b"
+      },
+      "status": "new",
+      "pdf_file": "",
+      "created_at": "2023-06-18T07:21:33.779Z",
+      "updated_at": "2023-06-18T07:21:33.779Z"
+    }
+  }
+]
